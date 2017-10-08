@@ -1,0 +1,94 @@
+{
+  "name": "dgpnode-daemon",
+  "version": "5.1.0",
+  "description": "daemon + process manager for sharing space on the storj network",
+  "main": "index.js",
+  "bin": {
+    "dgpnode": "bin/dgpnode.js",
+    "dgpnode-start": "bin/dgpnode-start.js",
+    "dgpnode-stop": "bin/dgpnode-stop.js",
+    "dgpnode-restart": "bin/dgpnode-restart.js",
+    "dgpnode-status": "bin/dgpnode-status.js",
+    "dgpnode-logs": "bin/dgpnode-logs.js",
+    "dgpnode-save": "bin/dgpnode-save.js",
+    "dgpnode-load": "bin/dgpnode-load.js",
+    "dgpnode-killall": "bin/dgpnode-killall.js",
+    "dgpnode-destroy": "bin/dgpnode-destroy.js",
+    "dgpnode-daemon": "bin/dgpnode-daemon.js",
+    "dgpnode-create": "bin/dgpnode-create.js"
+  },
+  "directories": {
+    "test": "test",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm run testsuite && npm run linter",
+    "testsuite": "STORJ_ALLOW_LOOPBACK=1 ./node_modules/.bin/mocha test/** --recursive",
+    "coverage": "STORJ_ALLOW_LOOPBACK=1 ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive",
+    "linter": "./node_modules/.bin/jshint --config .jshintrc ./index.js ./lib ./test ./bin"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storj/dgpnode-daemon.git"
+  },
+  "keywords": [
+    "storj",
+    "farmer",
+    "dgpnode",
+    "share"
+  ],
+  "author": "Alexander Leitner <alex@storj.io>",
+  "contributors": [
+    {
+      "name": "Gordon Hall",
+      "email": "gordon@storj.io"
+    },
+    {
+      "name": "littleskunk",
+      "url": "https://github.com/littleskunk"
+    },
+    {
+      "name": "Steve Ashman",
+      "url": "https://github.com/ssa3512"
+    }
+  ],
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/storj/dgpnode-daemon/issues"
+  },
+  "homepage": "https://github.com/storj/dgpnode-daemon#readme",
+  "dependencies": {
+    "async": "^2.1.4",
+    "blindfold": "0.0.1",
+    "bytes": "^2.4.0",
+    "cli-table": "^0.3.1",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "daemon": "^1.1.0",
+    "dnode": "^1.2.2",
+    "du": "^0.1.0",
+    "editor": "^1.0.0",
+    "diskusage": "^0.2.3",
+    "fslogger": "^2.0.1",
+    "kad-logger-json": "^0.1.2",
+    "mkdirp": "^0.5.1",
+    "pretty-ms": "^2.1.0",
+    "rc": "^1.1.6",
+    "readable-stream": "^2.2.2",
+    "storj-lib": "^8.1.0",
+    "strip-json-comments": "^2.0.1",
+    "tail": "^1.2.1",
+    "touch": "3.1.0",
+    "web3-utils": "^1.0.0-beta"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.13",
+    "jshint": "2.8.0",
+    "mocha": "^2.2.4",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.14.1"
+  }
+}
