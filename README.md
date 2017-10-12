@@ -1,5 +1,5 @@
 Storj Share Daemon
-==================
+==================  
 
 [![Build Status](https://img.shields.io/travis/Storj/dgpnode-daemon.svg?style=flat-square)](https://travis-ci.org/Storj/dgpnode-daemon)
 [![Coverage Status](https://img.shields.io/coveralls/Storj/dgpnode-daemon.svg?style=flat-square)](https://coveralls.io/r/Storj/dgpnode-daemon)
