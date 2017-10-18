@@ -1,20 +1,11 @@
-Storj Share Daemon
+dgpnode-daemon
 ==================  
-
-[![Build Status](https://img.shields.io/travis/Storj/dgpnode-daemon.svg?style=flat-square)](https://travis-ci.org/Storj/dgpnode-daemon)
-[![Coverage Status](https://img.shields.io/coveralls/Storj/dgpnode-daemon.svg?style=flat-square)](https://coveralls.io/r/Storj/dgpnode-daemon)
-[![NPM](https://img.shields.io/npm/v/dgpnode-daemon.svg?style=flat-square)](https://www.npmjs.com/package/dgpnode-daemon)
-[![License](https://img.shields.io/badge/license-AGPL3.0-blue.svg?style=flat-square)](https://raw.githubusercontent.com/Storj/dgpnode-daemon/master/LICENSE)
-[![Docker](https://img.shields.io/badge/docker-ready-blue.svg?style=flat-square)](https://store.docker.com/community/images/computeronix/dgpnode-daemon)
 
 Daemon + CLI for farming data on the Storj network, suitable for standalone
 use or inclusion in other packages...
 
-## Installation via Arch User Repositories
 
-dgpnode daemon is also available for Arch Linux as a package on the AUR as [dgpnode-daemon](https://aur.archlinux.org/packages/dgpnode-daemon/). Install it via your favourite AUR helper.
-
-## Manual Installation
+## Installation instructions
 
 Make sure you have the following prerequisites installed:
 
@@ -24,32 +15,6 @@ Make sure you have the following prerequisites installed:
 * Python 2.7
 * GCC/G++/Make
 
-### Node.js + NPM
-
-#### GNU+Linux & Mac OSX
-
-```
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-```
-
-Close your shell and open an new one. Now that you can call the `nvm` program,
-install Node.js (which comes with NPM):
-
-```
-nvm install --lts
-```
-
-#### Windows
-
-Download [Node.js LTS](https://nodejs.org/en/download/) for Windows, launch the
-installer and follow the setup instructions. Restart your PC, then test it from
-the command prompt:
-
-```
-node --version
-npm --version
-```
-
 ### Build Dependencies
 
 #### GNU+Linux
@@ -58,12 +23,6 @@ Debian based (like Ubuntu)
 ```
 apt install git python build-essential
 ```
-
-Red Hat / Centos
-```
-yum groupinstall 'Development Tools'
-```
-You might also find yourself lacking a C++11 compiler - [see this](http://hiltmon.com/blog/2015/08/09/c-plus-plus-11-on-centos-6-dot-6/)
 
 #### Mac OSX
 
