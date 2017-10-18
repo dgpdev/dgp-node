@@ -26,7 +26,7 @@ apt install git python build-essential
 
 #### Mac OSX
 
-```
+``` 
 xcode-select --install
 ```
 
