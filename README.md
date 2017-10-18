@@ -8,7 +8,7 @@ Storj Share Daemon
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg?style=flat-square)](https://store.docker.com/community/images/computeronix/dgpnode-daemon)
 
 Daemon + CLI for farming data on the Storj network, suitable for standalone
-use or inclusion in other packages.
+use or inclusion in other packages...
 
 ## Installation via Arch User Repositories
 
